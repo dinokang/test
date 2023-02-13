@@ -1,0 +1,61 @@
+#!/usr/bin/python3
+
+import openai
+import sys
+import argparse
+
+# Define OpenAI API key
+openai.api_key = "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"
+
+
+parser = argparse.ArgumentParser(description = 'chatGPT의 모드 선택')
+
+parser.add_argument('-c', dest = "code", action = 'store_true', default = False, help = 'model code 선택')
+parser.add_argument('-t', dest = 'text', action = 'store_true', default = True, help = 'model text 선택')
+parser.add_argument('-q', dest = 'question', type = str , action = 'store', default = 'False', help = '검색할 문장 입력' )
+parser.add_argument('-f', dest = 'file', type = str , action = 'store', default = 'False', help = '검색할 파일 입력' )
+
+args = parser.parse_args()
+
+print(f'code : {args.code}, text : {args.text} , Question :{args.question}')
+if args.code :
+    mode = 'code-davinci-002'    
+    print('code')
+elif args.text:
+    mode = 'text-davinci-003'
+    print('text')
+else : mode = 'text-davinci-003'
+
+model_engine = mode
+
+if args.question  != 'False' :
+    prompt = args.question
+else :
+    if args.file != 'False':
+        filename = args.file
+    else :
+        filename = 'input.txt'
+# Set up the model and prompt
+    f = open(filename, 'r')
+    line = f.readline()
+    prompt = line
+    f.close()
+  
+print("Question : " + prompt, end = '\n')
+
+# Generate a response
+completion = openai.Completion.create(
+    engine=model_engine,
+    prompt=prompt,
+    max_tokens=1024,
+    n=1,
+    stop=None,
+    temperature=0.5,
+)
+
+response = completion.choices[0].text
+print("Answer : " + response)
+
+f = open('Answer.txt', 'w')
+f.write(response)
+f.close
