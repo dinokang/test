@@ -52,3 +52,20 @@ Banana is a common fruit that is widely grown in tropical regions. It is an elon
 ```
 
 참고 :  [https://platform.openai.com/docs/api-reference/introduction](https://platform.openai.com/docs/api-reference/introduction)
+
+수정 사항 *
+
+1. chatgpt 실행시 input.txt에 작성되어 있는 질문을 입력받아 output.txt에 출력한다.
+2. chatgpt를 입력 후 추가 명령어를 통해 모드 선택 또는 질문 입력 등 가능하다.
+    1. mode 선택 
+    -c : code-davinci-002 모델 사용
+    -t : text-davinci-003
+    default : text-davinci-003
+    2. 질문 입력
+    -q : 사용자가 직접 질문 입력
+    -f : 파일내의 내용을 읽어서 질문 입력
+    default : input.txt의 내용 입력
+
+Example
+
+mode : 텍스트 모드, 질문 : what is apple?
