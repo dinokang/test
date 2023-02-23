@@ -69,3 +69,4 @@ Banana is a common fruit that is widely grown in tropical regions. It is an elon
 Example
 
 mode : 텍스트 모드, 질문 : what is apple?
+![Screenshot from 2023-02-23 10-37-56.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0835921f-43c7-4486-b1f8-daae434c5169/Screenshot_from_2023-02-23_10-37-56.png)
