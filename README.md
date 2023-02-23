@@ -55,7 +55,7 @@ Banana is a common fruit that is widely grown in tropical regions. It is an elon
 
 수정 사항 *
 
-1. chatgpt 실행시 input.txt에 작성되어 있는 질문을 입력받아 output.txt에 출력한다.
+1. chatgpt 실행시 input.txt에 작성되어 있는 질문을 입력받아 Answer.txt에 출력한다.
 2. chatgpt를 입력 후 추가 명령어를 통해 모드 선택 또는 질문 입력 등 가능하다.
     1. mode 선택 
     -c : code-davinci-002 모델 사용
