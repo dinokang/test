@@ -6,7 +6,7 @@
 
 [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys) 로그인 후 Create new secret key
 
-![Screenshot from 2023-02-09 14-11-26.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/edb466dc-3789-49e6-a155-06401dd7c8c0/Screenshot_from_2023-02-09_14-11-26.png)
+![Screenshot from 2023-02-09 14-11-26](https://user-images.githubusercontent.com/125230092/220803378-2cbabe14-e46a-4295-813c-f5d0d70036b6.png)
 
 sudo apt install python3.10-venv
 
@@ -69,4 +69,5 @@ Banana is a common fruit that is widely grown in tropical regions. It is an elon
 Example
 
 mode : 텍스트 모드, 질문 : what is apple?
-![Screenshot from 2023-02-23 10-37-56.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0835921f-43c7-4486-b1f8-daae434c5169/Screenshot_from_2023-02-23_10-37-56.png)
+
+![Screenshot from 2023-02-23 10-37-56](https://user-images.githubusercontent.com/125230092/220803300-f9ce93fa-fa34-4fb5-a75c-5dcb261ddd15.png)
